@@ -1,0 +1,83 @@
+body{
+	background: url("grass.jpg");
+}
+
+.noselect {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+#game{
+	float: left;
+}
+
+table{
+	border-top: 1px solid #AAAAAA;
+	border-left: 1px solid #AAAAAA;
+	border-spacing: 0;
+}
+
+tr, td{
+	padding: 0;
+	margin: 0;
+	border: none;	
+}
+
+td{
+	font-size: 5px;
+	width: 12px;
+	height: 12px;
+	border-right: 1px solid #AAAAAA;
+	border-bottom: 1px solid #AAAAAA;
+}
+
+td.alive{
+	background: black;
+}
+
+td.alive.n1{ background: #111111; }
+td.alive.n2{ background: #444444; }
+td.alive.n3{ background: #33CC11; }
+td.alive.n4{ background: #1133CC; }
+td.alive.n5{ background: #99AA11; }
+td.alive.n6{ background: #AAAA11; }
+td.alive.n7{ background: #991100; }
+td.alive.n8{ background: #CC1111; }
+
+
+#controls{
+	float:right;
+	width: 170px;
+	height: 100%;
+	border-left: 2px solid black;
+}
+
+#controls #inner-controls{
+	padding: 20px;
+}
+
+#wrapper{
+	width: 100%;
+	margin: 0 auto;
+}
+
+input[type=button]{
+	width: 95%;	
+}
+
+input.small{
+	width: auto;	
+}
+
+input[type=number]{
+	width: 40px;
+}
+
+#speed{
+	border: 1px solid black;
+	padding: 3px;
+}

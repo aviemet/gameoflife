@@ -1,0 +1,55 @@
+
+<html>
+<head>
+<title>Conway's Game of Life</title>
+<link rel='stylesheet' href='style.css' />
+
+<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="https://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script src="game.js"></script>
+<script src="forms.js"></script>
+<script src="scripts.js"></script>
+
+</head>
+<body>
+<div id="wrapper">
+
+<div id="controls">
+
+	<div id="inner-controls">
+		<input type="button" id="start" value="Start" /><br/>
+		<input type="button" id="stop" value="Stop" /><br/>
+		<input type="button" id="step" value="Step Forward" /><br/><br/>
+		<input type="button" id="random" value="Randomize" /> <br/>
+		Weight: ~ 1/<input type="number" id="seed" min="2" value="" /> cells<br/><br/>
+		<input type="button" id="clear" value="Reset Board" /><br/><br/>
+		<input type="button" id="faster" value="+" class="small" /> Speed <input type="button" id="slower" value="-" class="small" /> <span id="speed"></span> ms<br/>
+		<h2>Generations: <span id="generations">0</span></h2>
+		<div id="cell_count"></div><br/>
+		
+		<select id="forms">
+			<option value="default" selected>-- Special Forms --</option>
+			<option value="glider">Glider</option>
+			<option value="exploder_sm">Small Exploder</option>
+			<option value="exploder">Exploder</option>
+			<option value="row_10">Row of 10</option>
+			<option value="light_spaceship">Light Space Ship</option>
+			<option value="tumbler">Tumbler</option>
+			<option value="rorschach">Rorschach</option>
+			<option value="glider_gun">Glider Gun</option>
+			<option value="$rats">$Rats</option>
+			<option value="beacon">Beacon</option>
+			<option value="1-2-3-4">1-2-3-4</option>
+		</select>
+
+		<div id="debug" style="width: 300px">
+		
+		</div>
+	</div>
+</div>
+
+<div id="game" class="noselect"></div>
+	
+</div>
+</body>
+</html>
